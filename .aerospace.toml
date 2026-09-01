@@ -49,7 +49,7 @@ automatically-unhide-macos-hidden-apps = false
 # even when they are invisible.
 # This config version is only available since 'config-version = 2'
 # Fallback value (if you omit the key): persistent-workspaces = []
-persistent-workspaces = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "Q", "E", "R"]
+persistent-workspaces = ["1", "2", "3", "4", "5", "6", "Q", "E", "R"]
 
 # A callback that runs every time binding mode changes
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
@@ -62,10 +62,11 @@ focus-follows-mouse.enabled = false
 on-window-detected = [
     { if = 'test %{app-bundle-id} = com.microsoft.VSCode', run = 'move-node-to-workspace Q' },
     { if = 'test %{app-bundle-id} = com.google.Chrome', run = 'move-node-to-workspace 1' },
-    { if = 'test %{app-bundle-id} = com.openai.codex || test %{app-bundle-id} = com.google.GeminiMacOS', run = 'move-node-to-workspace 2' },
+    { if = 'test %{app-bundle-id} = com.openai.codex || test %{app-bundle-id} = com.google.GeminiMacOS || test %{app-bundle-id} = com.anthropic.claudefordesktop', run = 'move-node-to-workspace 2' },
     { if = 'test %{app-bundle-id} = com.apple.Notes', run = 'move-node-to-workspace 3' },
-    { if = 'test %{app-bundle-id} = com.yourcompany.ParasharasLight', run = 'move-node-to-workspace 5' },
-    { if = 'test %{app-bundle-id} = com.apple.Preview', run = 'move-node-to-workspace E' },
+    { if = 'test %{app-bundle-id} = com.google.Chrome.app.cinhimbnkkaeohfgghhklpknlkffjgod', run = 'move-node-to-workspace 4' },
+    { if = 'test %{app-bundle-id} = com.yourcompany.ParasharasLight || test %{app-bundle-id} = com.postmanlabs.mac', run = 'move-node-to-workspace 5' },
+    { if = 'test %{app-bundle-id} = com.tinyspeck.slackmacgap', run = 'move-node-to-workspace E' },
     { if = 'test %{app-bundle-id} = ru.keepcoder.Telegram || test %{app-bundle-id} = net.whatsapp.WhatsApp', run = 'move-node-to-workspace R' },
 ]
 
@@ -155,9 +156,6 @@ on-window-detected = [
     alt-4 = 'workspace 4'
     alt-5 = 'workspace 5'
     alt-6 = 'workspace 6'
-    alt-7 = 'workspace 7'
-    alt-8 = 'workspace 8'
-    alt-9 = 'workspace 9'
     alt-q = 'workspace Q'
     alt-e = 'workspace E'
     alt-r = 'workspace R'
@@ -170,9 +168,6 @@ on-window-detected = [
     alt-shift-4 = 'move-node-to-workspace 4'
     alt-shift-5 = 'move-node-to-workspace 5'
     alt-shift-6 = 'move-node-to-workspace 6'
-    alt-shift-7 = 'move-node-to-workspace 7'
-    alt-shift-8 = 'move-node-to-workspace 8'
-    alt-shift-9 = 'move-node-to-workspace 9'
     alt-shift-q = 'move-node-to-workspace Q'
     alt-shift-e = 'move-node-to-workspace E'
     alt-shift-r = 'move-node-to-workspace R'
