@@ -132,12 +132,19 @@ on-window-detected = [
     alt-s = 'focus down'
     alt-w = 'focus up'
     alt-d = 'focus right'
+    alt-sectionSign = 'focus-back-and-forth'
+    alt-backtick = 'focus-back-and-forth'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#move
     alt-shift-a = 'move left'
     alt-shift-s = 'move down'
     alt-shift-w = 'move up'
     alt-shift-d = 'move right'
+
+    alt-ctrl-a = 'swap left'
+    alt-ctrl-s = 'swap down'
+    alt-ctrl-w = 'swap up'
+    alt-ctrl-d = 'swap right'
     alt-shift-x = 'layout floating tiling'
 
     alt-f = 'fullscreen'
