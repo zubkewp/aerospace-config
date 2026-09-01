@@ -132,8 +132,6 @@ on-window-detected = [
     alt-s = 'focus down'
     alt-w = 'focus up'
     alt-d = 'focus right'
-    alt-sectionSign = 'focus-back-and-forth'
-    alt-backtick = 'focus-back-and-forth'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#move
     alt-shift-a = 'move left'
