@@ -133,12 +133,6 @@ on-window-detected = [
     alt-w = 'focus up'
     alt-d = 'focus right'
 
-    # See: https://nikitabobko.github.io/AeroSpace/commands#move
-    alt-shift-a = 'move left'
-    alt-shift-s = 'move down'
-    alt-shift-w = 'move up'
-    alt-shift-d = 'move right'
-
     alt-ctrl-a = 'swap left'
     alt-ctrl-s = 'swap down'
     alt-ctrl-w = 'swap up'
